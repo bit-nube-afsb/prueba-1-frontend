@@ -7,13 +7,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th>1</th>
-                <th>andres&#64;gmail.com</th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>carlos&#64;gmail.com</th>
+            <tr *ngFor="let user of users">
+                <td class="border border-slate-200 px-4 py-2">{{user._id}}</td>
+                <td class="border border-slate-200 px-4 py-2">{{user.email}}</td>
             </tr>
         </tbody>
     </table>
