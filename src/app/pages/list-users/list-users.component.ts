@@ -10,4 +10,6 @@ import { UserService } from '../../services/user.service';
 })
 export class ListUsersComponent {
 
+  constructor(private userService: UserService){}
+
 }
